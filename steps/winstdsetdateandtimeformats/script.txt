@@ -1,0 +1,9 @@
+$culture = (Get-Culture).Clone()
+
+$culture.DateTimeFormat.ShortTimePattern = 'HH:mm:ss'
+$culture.DateTimeFormat.LongTimePattern = 'HH:mm:ss'
+
+$culture.DateTimeFormat.ShortDatePattern = 'dd/MM/yyyy'
+$culture.DateTimeFormat.LongDatePattern = 'dd MMMM yyyy'
+
+Set-Culture $culture

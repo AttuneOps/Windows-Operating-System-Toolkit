@@ -1,0 +1,19 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "0ee26a13-9acd-4943-ad11-b45c79b1282f", 
+    "isBlueprint": false, 
+    "key": "wsuuinstallwinscp", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "wsuuwscpdeploywinscp"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "wsuuwscpinstallwinscp"
+        }
+    ], 
+    "name": "WSUU Install WinSCP", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

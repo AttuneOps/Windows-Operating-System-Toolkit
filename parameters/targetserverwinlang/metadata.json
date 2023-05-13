@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "9235e998-4001-488b-86d9-e2da9e7b8062", 
+    "key": "targetserverwinlang", 
+    "name": "Target Server Win: LANG", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

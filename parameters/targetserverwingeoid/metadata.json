@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "a03b4539-c7e3-4e3c-a239-66c72ebefec4", 
+    "key": "targetserverwingeoid", 
+    "name": "Target Server Win: GeoID", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

@@ -1,0 +1,51 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "41d1a1a3-e240-4f20-994a-36e8525154c0", 
+    "isBlueprint": true, 
+    "key": "winsetupstandardwindowsos", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "winstddeployhostsfile"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "winstdupdatehostname"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "winstdsetdateandtimeformats"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "winstdsettimezone"
+        }, 
+        {
+            "order": 80, 
+            "stepKey": "winstdsetcountry"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "winstdsetlanguage"
+        }, 
+        {
+            "order": 120, 
+            "stepKey": "winstdsetlanguageinregistry"
+        }, 
+        {
+            "order": 140, 
+            "stepKey": "winstdsettimesync"
+        }, 
+        {
+            "order": 160, 
+            "stepKey": "winstdsetbrowserhomepage"
+        }, 
+        {
+            "order": 180, 
+            "stepKey": "winstddisableservermanager"
+        }
+    ], 
+    "name": "WIN Setup Standard Windows OS", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

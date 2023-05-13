@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "ae6e57ce-03e8-4ce2-92d1-a91aaae990c6", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "createedrive", 
+    "name": "Create E: Drive", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 180, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

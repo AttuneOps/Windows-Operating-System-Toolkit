@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "1e6498b4-7b72-4604-91b4-51f57dbae601", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winuninstalldefaultapplications", 
+    "name": "WIN Uninstall Default Applications", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

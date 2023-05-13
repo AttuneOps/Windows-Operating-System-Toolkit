@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "30e5ae88-3aaa-4b6a-bc28-6918f199dd7f", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdsetdateandtimeformats", 
+    "name": "WIN STD Set Date and Time Formats", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

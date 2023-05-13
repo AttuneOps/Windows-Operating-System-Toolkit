@@ -1,0 +1,21 @@
+{
+    "archiveKey": "ponwinserverhostsfile", 
+    "deployPath": "/c$/", 
+    "enabled": true, 
+    "externalUuid4": "07b3680b-2fd7-4db5-a0cb-2d2c3225d134", 
+    "key": "winstddeployhostsfile", 
+    "makoFileNames": [
+        "Windows/System32/drivers/etc/hosts"
+    ], 
+    "makoParameters": [
+        {
+            "name": "environmentServers", 
+            "parameterKey": "targetenvironmentservers", 
+            "parameterType": "c.s.s.b.phv.ServerList"
+        }
+    ], 
+    "name": "WIN STD Deploy Hosts File", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileCompiledTuple"
+}

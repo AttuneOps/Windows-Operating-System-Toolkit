@@ -1,0 +1,1 @@
+Display the currently selected language, then set this to the specified OS language input value and display the new settings.

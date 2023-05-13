@@ -1,0 +1,1 @@
+Display the currently selected location, then set this to the specified Geo ID input value and display the new value.

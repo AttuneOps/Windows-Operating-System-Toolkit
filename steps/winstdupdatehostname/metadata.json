@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "de4337b8-6fc3-41b1-a331-a5fead00d5fd", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdupdatehostname", 
+    "name": "WIN STD Update Hostname", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

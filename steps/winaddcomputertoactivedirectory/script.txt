@@ -1,0 +1,5 @@
+$adUser = "{windowsAdAdminUser.user}@{adFullDomainName}"
+$adPass = ConvertTo-SecureString -String "{windowsAdAdminUser.password}" -AsPlainText -Force
+$adCred = New-Object System.Management.Automation.PSCredential($adUser,$adPass)
+Write-Host $adUser
+Add-Computer -DomainName {adFullDomainName} -Credential $adCred -Verbose

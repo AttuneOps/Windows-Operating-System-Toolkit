@@ -1,0 +1,3 @@
+msiexec.exe /qn /i C:\software\mobaxterm\MobaXterm_installer_12.4.msi
+
+# Remove-Item -Recurse C:\software\mobaxterm

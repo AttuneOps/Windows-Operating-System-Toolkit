@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutil7z", 
+    "deployPath": "/c$/software", 
+    "enabled": true, 
+    "externalUuid4": "b3b2b6fc-65a4-43b7-aac4-69eeb3389a77", 
+    "key": "wsuu7zdeploy7z", 
+    "name": "WSUU 7Z Deploy 7z", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

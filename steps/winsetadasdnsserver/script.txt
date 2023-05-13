@@ -1,0 +1,17 @@
+$adServer = "{activeDirectoryServer.ip}"
+$subnetDnsCfg = @("{dmsSubnet.dns1}", "{dmsSubnet.dns2}")
+$dnsServers = @($adServer)
+
+# Don't use the same server for secondary / failover DNS
+if ($adServer -notlike $subnetDnsCfg[0] -and ($subnetDnsCfg[0] -notlike "")) {
+    $dnsServers = @($dnsServers, $subnetDnsCfg[0])
+}
+else {
+    if($subnetDnsCfg[1] -notlike $adServer -and($subnetDnsCfg[1] -notlike "")) {
+        $dnsServers = @($dnsServers, $subnetDnsCfg[1])
+    }
+}
+
+Set-DnsClientServerAddress -InterfaceAlias Ethernet0 -ServerAddresses $dnsServers
+# Show results
+Get-DnsClientServerAddress -InterfaceAlias Ethernet0

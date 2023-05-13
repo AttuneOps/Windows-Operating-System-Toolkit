@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "c3a2ed5d-bd86-463e-b493-9a823e701395", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdsetcountry", 
+    "name": "WIN STD Set Country", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

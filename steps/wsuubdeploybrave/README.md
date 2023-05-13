@@ -1,0 +1,1 @@
+Deploy the Brave browser setup file to the /software directory on the C drive.

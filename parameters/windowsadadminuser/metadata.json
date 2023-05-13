@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "c5ef19b3-ed0f-406c-b131-31692994ea45", 
+    "key": "windowsadadminuser", 
+    "name": "Windows: AD Admin User", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WinOsCred"
+}

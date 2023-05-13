@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "c0930f35-cd6e-495e-8851-6fcc68e0d4f1", 
+    "key": "targetserverbrowserhomepage", 
+    "name": "Target Server: Browser Home Page", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

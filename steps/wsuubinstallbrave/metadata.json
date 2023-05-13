@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "da134878-5669-48dc-aff5-9a4a9b04f384", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuubinstallbrave", 
+    "name": "WSUU B Install Brave", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 600, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

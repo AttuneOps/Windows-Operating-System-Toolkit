@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "f58fc75f-a423-408c-99a3-79868563e554", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winschedulereboot", 
+    "name": "WIN Schedule Reboot", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilwinscp", 
+    "deployPath": "/c$/software", 
+    "enabled": true, 
+    "externalUuid4": "259b391c-3c55-4e93-95f6-3c9a61f60dc0", 
+    "key": "wsuuwscpdeploywinscp", 
+    "name": "WSUU WSCP Deploy WinSCP", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

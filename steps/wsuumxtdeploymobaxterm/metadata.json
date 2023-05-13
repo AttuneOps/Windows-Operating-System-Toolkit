@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilmobaxterm", 
+    "deployPath": "/c$/software/mobaxterm", 
+    "enabled": true, 
+    "externalUuid4": "c68c440c-d5ec-48fe-b18a-4e0ec7d5bb24", 
+    "key": "wsuumxtdeploymobaxterm", 
+    "name": "WSUU MXT Deploy MobaXTerm", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

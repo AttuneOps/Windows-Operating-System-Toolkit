@@ -1,0 +1,1 @@
+Deploy the PuTTY setup files to the /software directory on the C drive.

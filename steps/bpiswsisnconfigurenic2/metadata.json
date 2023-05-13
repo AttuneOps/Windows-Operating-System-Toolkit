@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "9c902ad7-1a80-48c6-a7d5-da44471d6898", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "bpiswsisnconfigurenic2", 
+    "name": "BPISW SISN Configure NIC2", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

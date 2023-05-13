@@ -1,0 +1,1 @@
+Removes every app with a store signature that doesn't have anything with .NET in the name.

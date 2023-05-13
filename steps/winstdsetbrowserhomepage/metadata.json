@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "d49770e7-0ab5-4ede-a4ac-ac533e1b733c", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdsetbrowserhomepage", 
+    "name": "WIN STD Set Browser HomePage", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

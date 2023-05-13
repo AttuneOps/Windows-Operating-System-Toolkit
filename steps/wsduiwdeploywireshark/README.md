@@ -1,0 +1,1 @@
+Deploy the Wireshark setup files to the /software/wireshark directory on the C drive.

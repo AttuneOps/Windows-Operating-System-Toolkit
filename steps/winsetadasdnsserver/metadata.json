@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "8c8b64de-b897-46c9-9368-3f4678f18654", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winsetadasdnsserver", 
+    "name": "WIN Set AD as DNS Server", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

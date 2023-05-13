@@ -1,0 +1,11 @@
+Write-Host "Language list was:"
+Get-WinUserLanguageList
+
+Write-Host "Setting the Country"
+Write-Host "Settings -> Time & Language -> Region and Language -> Languages"
+
+$newLang = New-WinUserLanguageList -Language {targetServerWinLang}
+Set-WinUserLanguageList -LanguageList $newLang -Force
+
+Write-Host "Language list has been changed to:"
+Get-WinUserLanguageList

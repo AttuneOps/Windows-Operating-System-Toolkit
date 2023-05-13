@@ -1,0 +1,17 @@
+msiexec.exe /qn /i C:\software\putty-64bit-0.73-installer.msi
+
+$EXE="C:\Program Files\PuTTY\putty.exe"
+
+function Make-Shortcut ([string] $DestPath) {
+    $DestLink = "$DestPath\putty.lnk"
+    if (Test-Path "$DestLink") { Remove-Item "$DestLink" }
+    
+    $WshShell = New-Object -comObject WScript.Shell
+    $Shortcut = $WshShell.CreateShortcut("$DestLink")
+    $Shortcut.TargetPath = "$EXE"
+    $Shortcut.Save()
+}
+
+Make-Shortcut "C:\Users\Public\Desktop"
+
+#Remove-Item C:\software\putty-64bit-0.73-installer.msi

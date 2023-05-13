@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilpowertoys", 
+    "deployPath": "/c$/software", 
+    "enabled": true, 
+    "externalUuid4": "416e35fe-146d-411e-a3f2-66808ee51023", 
+    "key": "wsuuptdeploypowertoys", 
+    "name": "WSUU PT Deploy PowerToys", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

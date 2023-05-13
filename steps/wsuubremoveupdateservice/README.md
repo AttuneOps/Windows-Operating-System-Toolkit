@@ -1,0 +1,1 @@
+This will remove the Brave software update services.

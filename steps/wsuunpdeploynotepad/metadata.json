@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilnotepad", 
+    "deployPath": "/c$/software", 
+    "enabled": true, 
+    "externalUuid4": "b7a42eaa-c607-48fd-87bf-094a387785aa", 
+    "key": "wsuunpdeploynotepad", 
+    "name": "WSUU NP Deploy Notepad++", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

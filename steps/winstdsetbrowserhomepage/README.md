@@ -1,0 +1,1 @@
+Sets the start page, search page, default page shown on launch, and default search engine for Internet Explorer to the specified Browser Home Page URL.

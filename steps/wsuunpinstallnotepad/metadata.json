@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "268352c5-6ebf-4672-ab10-bafb495bea91", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuunpinstallnotepad", 
+    "name": "WSUU NP Install Notepad++", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

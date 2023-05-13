@@ -1,0 +1,19 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "e5bdb2b4-99df-449b-8588-68514920ef42", 
+    "isBlueprint": false, 
+    "key": "wsduinstallwireshark", 
+    "links": [
+        {
+            "order": 20, 
+            "stepKey": "wsduiwdeploywireshark"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "wsduiwinstallwireshark"
+        }
+    ], 
+    "name": "WSDU Install Wireshark", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

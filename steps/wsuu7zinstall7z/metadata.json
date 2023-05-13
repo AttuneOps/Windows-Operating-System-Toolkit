@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "849f733a-4072-4f56-b75c-90bb60b45119", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuu7zinstall7z", 
+    "name": "WSUU 7Z Install 7z", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

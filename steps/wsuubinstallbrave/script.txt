@@ -1,0 +1,14 @@
+Set-Location c:\software
+
+Start-Process .\BraveBrowserStandaloneSilentSetup.exe -Wait
+
+$EXE = "C:\Windows\System32\config\systemprofile\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"
+$DestPath = "C:\Users\Public\Desktop"
+
+$DestLink = "$DestPath\Brave.lnk"
+if (Test-Path "$DestLink") { Remove-Item "$DestLink" }
+
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$DestLink")
+$Shortcut.TargetPath = "$EXE"
+$Shortcut.Save()

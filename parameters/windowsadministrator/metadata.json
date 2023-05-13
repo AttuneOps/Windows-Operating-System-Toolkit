@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "52242a3e-1358-4e06-9e86-2b5bd69e1921", 
+    "key": "windowsadministrator", 
+    "name": "Windows: Administrator", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WinOsCred"
+}

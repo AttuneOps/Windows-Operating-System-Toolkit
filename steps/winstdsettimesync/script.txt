@@ -1,0 +1,26 @@
+$path = "HKLM:\system\CurrentControlSet\Services\W32Time\Parameters"
+$name = "NtpServer"
+
+$value = Get-ItemProperty -Path $path -Name $name
+
+Write-Output "Existing NtpServer Value: "$value.NtpServer
+
+# JJC - I don't know if you CAN put more than one server in here.
+$newValue = "{ntpServers.serverFqns},0x9"
+Write-Output "Time Sync Servers: $newValue"
+
+Write-Output "New NtpServer Value: "$newValue
+
+Set-ItemProperty -Path $path -Name $name -Value $newValue
+
+# ------------------------------------------------------------------------------
+# Set the servers displayed in Control Panel -> Date and Time -> Internet Time (tab)
+
+$path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers"
+
+$fqns = "{ntpServers.serverFqns}" -Split ','
+for ( $index = 0; $index -lt $fqns.count; $index++) {
+    $fqn = $fqns[$index]
+    Write-Output "Setting [$($index + 1)] : $fqn"
+    Set-ItemProperty -Path $path -Name ($index + 1) -Value $fqn
+}

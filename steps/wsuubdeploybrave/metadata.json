@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilbrave64bit", 
+    "deployPath": "/c$/software", 
+    "enabled": true, 
+    "externalUuid4": "a4a91439-b186-4abf-a927-688ba0b5f0c2", 
+    "key": "wsuubdeploybrave", 
+    "name": "WSUU B Deploy Brave", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

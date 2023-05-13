@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "7ac732fb-d661-4feb-ba68-15be494ffd6d", 
+    "key": "adfulldomainname", 
+    "name": "AD Full Domain Name", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

@@ -1,0 +1,77 @@
+$ZIP="c:\software\npp.7.9.2.portable.zip"
+$COMP_PLUGIN_ZIP="c:\software\ComparePlugin.v1.5.6.2.bin.zip"
+$DEST="c:\Program Files\npp"
+$EXE="$DEST\notepad++.exe"
+$SEND_TO_TOYS_DIR="c:\Program Files\Send To Toys"
+
+function Make-Shortcut ([string] $DestPath) {
+    $DestLink = "$DestPath\Notepad ++.lnk"
+    if (Test-Path "$DestLink") { Remove-Item "$DestLink" }
+    
+    $WshShell = New-Object -comObject WScript.Shell
+    $Shortcut = $WshShell.CreateShortcut("$DestLink")
+    $Shortcut.TargetPath = "$EXE"
+    $Shortcut.Save()
+}
+
+if (Test-Path "$DEST") {
+    "Removing old dir $DEST"
+    Remove-Item "$DEST" -force -recurse
+}
+
+"Extracting $ZIP -> $DEST"
+#& "C:\Program Files\7-Zip\7z.exe" x -o"$DEST" "$ZIP" 
+Expand-Archive -LiteralPath "$ZIP" -DestinationPath "$DEST"
+
+"Extracting compare plugin"
+#& "C:\Program Files\7-Zip\7z.exe" x -o"$DEST\plugins" "$COMP_PLUGIN_ZIP"
+Expand-Archive -LiteralPath "$COMP_PLUGIN_ZIP" -DestinationPath "$DEST\plugins"
+
+"Creating start menu shortcut"
+Make-Shortcut "C:\ProgramData\Microsoft\Windows\Start Menu"
+Make-Shortcut "C:\Users\Public\Desktop"
+
+
+
+"Associating txt files with Notepad++"
+cmd /c @"
+ftype txtfile="$EXE" %1 %*
+"@
+if (-Not ($?) -or "$LASTEXITCODE" -ne 0) {
+    Write-Error "Failed to assicate text files with Notepad++"
+}
+
+"Adding notepad++ to 'Send To' Menu"
+push-location $SEND_TO_TOYS_DIR
+.\SendToAdd.exe "$EXE"
+
+pop-location
+
+"Adding notepad++ to 'Open With' Menu"
+$escapedExe = $EXE -replace "\\", "\\\\";
+
+$reg = @"
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad++]
+
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad++\command]
+@="\"$escapedExe\" \"%1\""
+"Icon"="($escapedExe),0"
+
+"@
+
+$tmp = New-TemporaryFile
+out-file -filePath $tmp.FullName -InputObject $reg
+reg import $tmp.FullName /reg:64
+Remove-Item $tmp.FullName
+
+Remove-Item $ZIP
+Remove-Item $COMP_PLUGIN_ZIP
+
+"Fixing Load langs.xml Failed Error in Notepad++"
+# Rename-Item -Path "$($DEST)\langs.xml" -NewName "langs.xml.bad"
+Copy-Item "$($DEST)\langs.model.xml" -Destination  "$($DEST)\langs.xml"
+
+"Fixing stylers.xml popup in Notepad++"
+Copy-Item "$($DEST)\stylers.model.xml" -Destination "$($DEST)\stylers.xml"

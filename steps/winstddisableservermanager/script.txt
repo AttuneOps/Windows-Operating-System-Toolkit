@@ -1,0 +1,11 @@
+# This may get run on Win10, It should just silently do nothing
+
+if (Test-Path "HKCU:\Software\Microsoft\ServerManager") {
+    Write-Host "Disabling ServerManager opening at login"
+    New-ItemProperty -Path HKCU:\Software\Microsoft\ServerManager `
+        -Name DoNotOpenServerManagerAtLogon `
+        -PropertyType DWORD `
+        -Value "0x1" -Force
+} else {
+    Write-Host "This is not a windows server"
+}

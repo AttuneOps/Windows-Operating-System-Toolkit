@@ -1,0 +1,19 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "56b6ae24-ab03-470a-8ee2-97d00c342ab0", 
+    "isBlueprint": false, 
+    "key": "wsuuinstall7z", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "wsuu7zdeploy7z"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "wsuu7zinstall7z"
+        }
+    ], 
+    "name": "WSUU Install 7z", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "3c3cf86c-c353-4e2d-8c6f-aa173667f69e", 
+    "key": "dmssubnet", 
+    "name": "DMS Subnet", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Ip4Subnet"
+}

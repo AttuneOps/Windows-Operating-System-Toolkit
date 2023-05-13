@@ -1,0 +1,1 @@
+Deploy the setup files for PowerToys to the /software directory on the C drive.

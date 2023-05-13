@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "3792d082-77b2-44bc-86ba-2e6678ba939d", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuubremoveupdateservice", 
+    "name": "WSUU B Remove Update Service", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

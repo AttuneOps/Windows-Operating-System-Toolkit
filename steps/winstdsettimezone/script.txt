@@ -1,0 +1,1 @@
+Get-TimeZone '{targetServerWindowsTimezone}' | Set-TimeZone

@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "caf824c7-4ff9-4d65-96ae-507674c156bc", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsduiwinstallwireshark", 
+    "name": "WSDU IW Install Wireshark", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

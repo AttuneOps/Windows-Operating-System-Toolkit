@@ -1,0 +1,1 @@
+Deploy the WinSCP setup files to the /software directory in the C drive.

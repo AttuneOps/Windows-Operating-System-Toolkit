@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "1ccf1297-33ca-40e6-a5ef-24e87d14d89a", 
+    "interpreter": 1, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "batchfile", 
+    "key": "wdshdisablesleepandhibernation", 
+    "name": "WDSH Disable Sleep and Hibernation", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": null, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

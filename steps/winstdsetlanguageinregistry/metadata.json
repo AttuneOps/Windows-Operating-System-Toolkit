@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "e5241ad8-6cf1-400a-a980-ab313cd65ff1", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdsetlanguageinregistry", 
+    "name": "WIN STD Set Language In Registry", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 40, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

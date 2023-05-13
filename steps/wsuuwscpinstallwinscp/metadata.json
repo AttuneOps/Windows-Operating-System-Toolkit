@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "825912d5-ac68-48ce-b2ea-23cec773de0c", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuuwscpinstallwinscp", 
+    "name": "WSUU WSCP Install WinSCP", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "a234935c-f8a7-436a-a85d-a39aedf232ed", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdsettimezone", 
+    "name": "WIN STD Set Timezone", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

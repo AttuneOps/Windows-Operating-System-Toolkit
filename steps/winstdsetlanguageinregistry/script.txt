@@ -1,0 +1,14 @@
+$path_hkcu = 'HKCU:\Control Panel\International'
+$path_hku = 'Microsoft.PowerShell.Core\Registry::HKEY_USERS\.Default\Control Panel\International'
+
+
+
+$value = '{targetServerWinLangId}'
+$name = 'Locale'
+Set-Itemproperty -Path $path_hkcu -Name $name -Value $value
+Set-Itemproperty -Path $path_hku -Name $name -Value $value
+
+$value = '{targetServerWinLang}'
+$name = 'LocaleName'
+Set-Itemproperty -Path $path_hkcu -Name $name -Value $value
+Set-Itemproperty -Path $path_hku -Name $name -Value $value

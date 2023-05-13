@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "18af1aa2-f58a-440d-a884-2d9c53990d45", 
+    "key": "targetserverwindowstimezone", 
+    "name": "Target Server: Windows TimeZone", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

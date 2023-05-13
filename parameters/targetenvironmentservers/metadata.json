@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "ea199973-2458-40e0-9aa2-8f16ef13f052", 
+    "key": "targetenvironmentservers", 
+    "name": "Target Environment Servers", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.ServerList"
+}

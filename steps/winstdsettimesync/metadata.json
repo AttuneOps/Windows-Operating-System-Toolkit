@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "7458cb01-3b6c-436e-8288-ff66375bdb8c", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstdsettimesync", 
+    "name": "WIN STD Set Time Sync", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

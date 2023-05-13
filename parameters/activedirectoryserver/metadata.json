@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "00522f3c-7805-4d24-9b87-5bf57435ea94", 
+    "key": "activedirectoryserver", 
+    "name": "Active Directory Server", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WindowsServer"
+}

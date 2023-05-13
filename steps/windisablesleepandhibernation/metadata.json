@@ -1,0 +1,15 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "12351901-8343-41fa-bc5c-941f44d52a90", 
+    "isBlueprint": true, 
+    "key": "windisablesleepandhibernation", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "wdshdisablesleepandhibernation"
+        }
+    ], 
+    "name": "WIN Disable Sleep and Hibernation", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

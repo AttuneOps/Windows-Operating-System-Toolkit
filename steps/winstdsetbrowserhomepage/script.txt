@@ -1,0 +1,40 @@
+$path_hklm = 'HKLM:\Software\Microsoft\Internet Explorer\Main'
+$path_hklm32 = 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Internet Explorer\Main'
+$path_hkcu = 'HKCU:\Software\Microsoft\Internet Explorer\Main'
+$path_hku = 'Microsoft.PowerShell.Core\Registry::HKEY_USERS\.Default\Software\Microsoft\Internet Explorer\Main'
+
+Set-Location 'Registry::\HKEY_USERS'
+
+
+if ( -Not (Test-Path '.Default\Software\Microsoft\Internet Explorer')) {
+    New-Item -Path '.Default\Software\Microsoft' -Name 'Internet Explorer'
+}
+
+
+if ( -Not (Test-Path '.Default\Software\Microsoft\Internet Explorer\Main')) {
+    New-Item -Path '.Default\Software\Microsoft\Internet Explorer' -Name Main
+}
+
+
+$value = '{targetServerBrowserHomePage}'
+
+$name = 'Start Page'
+Set-Itemproperty -Path $path_hkcu -Name $name -Value $value
+Set-Itemproperty -Path $path_hku -Name $name -Value $value
+Set-Itemproperty -Path $path_hklm -Name $name -Value $value
+Set-Itemproperty -Path $path_hklm32 -Name $name -Value $value
+
+$name = 'Search Page'
+Set-Itemproperty -Path $path_hkcu -Name $name -Value $value
+Set-Itemproperty -Path $path_hku -Name $name -Value $value
+Set-Itemproperty -Path $path_hklm -Name $name -Value $value
+Set-Itemproperty -Path $path_hklm32 -Name $name -Value $value
+
+$name = 'Default_Page_URL'
+Set-Itemproperty -Path $path_hklm -Name $name -Value $value
+Set-Itemproperty -Path $path_hklm32 -Name $name -Value $value
+
+$name = 'Default_Search_URL'
+Set-Itemproperty -Path $path_hklm -Name $name -Value $value
+Set-Itemproperty -Path $path_hklm32 -Name $name -Value $value
+

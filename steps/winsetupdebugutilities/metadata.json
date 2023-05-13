@@ -1,0 +1,15 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "17e8b30c-7359-4020-8753-5dd71eea2b68", 
+    "isBlueprint": true, 
+    "key": "winsetupdebugutilities", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "wsduinstallwireshark"
+        }
+    ], 
+    "name": "WIN Setup Debug Utilities", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

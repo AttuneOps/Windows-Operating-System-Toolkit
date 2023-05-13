@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "e8789cc6-7951-412c-8d6a-4605a4ab0307", 
+    "interpreter": 1, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "batchfile", 
+    "key": "wsuuptinstallpowertoys", 
+    "name": "WSUU PT Install Power Toys", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

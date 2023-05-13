@@ -1,0 +1,1 @@
+Set the NTP server(s) to the specified list of NTP servers for synchronisation of system time and date.

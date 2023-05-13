@@ -1,0 +1,15 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "5788df37-9aa6-479b-973c-a3361dc03dbe", 
+    "isBlueprint": true, 
+    "key": "winpartitionandformatedrive", 
+    "links": [
+        {
+            "order": 20, 
+            "stepKey": "createedrive"
+        }
+    ], 
+    "name": "WIN Partition and Format E: Drive", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

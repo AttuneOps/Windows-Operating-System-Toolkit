@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilwireshark", 
+    "deployPath": "/c$/software/wireshark", 
+    "enabled": true, 
+    "externalUuid4": "9288be94-5d12-437d-9827-2ab45d4f9ae6", 
+    "key": "wsduiwdeploywireshark", 
+    "name": "WSDU IW Deploy Wireshark", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

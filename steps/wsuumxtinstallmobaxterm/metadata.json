@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "f9d29847-13bb-4eb0-b14c-969bc57386ba", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuumxtinstallmobaxterm", 
+    "name": "WSUU MXT Install MobaXTerm", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

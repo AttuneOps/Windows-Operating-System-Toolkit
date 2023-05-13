@@ -1,0 +1,1 @@
+Install the Brave browser and create a Desktop shortcut for it.

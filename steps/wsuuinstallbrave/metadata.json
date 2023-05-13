@@ -1,0 +1,23 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "18fc4e53-60f9-4258-a97c-624b762a1114", 
+    "isBlueprint": true, 
+    "key": "wsuuinstallbrave", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "wsuubdeploybrave"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "wsuubinstallbrave"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "wsuubremoveupdateservice"
+        }
+    ], 
+    "name": "WSUU Install Brave", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

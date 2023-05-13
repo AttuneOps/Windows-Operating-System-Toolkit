@@ -1,0 +1,1 @@
+Deploy the MobaXTerm setup files to the /software/mobaxterm directory on the C drive.

@@ -1,0 +1,17 @@
+"Installing WinSCP"
+c:\software\WinSCP-5.15.9-Setup.exe /VERYSILENT
+
+
+
+$REG_PATH = 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment'
+$path = (Get-ItemProperty -Path "$REG_PATH" -Name PATH).Path
+
+if ($path -Match 'WinSCP') {
+    "WinSCP already added to path"
+} else {
+    "Adding WinSCP to the PATH"
+    $path = $path + ";C:\Program Files (x86)\WinSCP"
+    Set-ItemProperty -Path "$REG_PATH" -Name PATH -Value $path
+}
+
+# Remove-Item c:\software\WinSCP-5.15.9-Setup.exe

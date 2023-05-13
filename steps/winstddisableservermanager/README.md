@@ -1,0 +1,1 @@
+If the target server is a Windows Server or Windows 10 instance, disable Server Manager from running at startup.

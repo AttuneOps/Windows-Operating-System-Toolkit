@@ -1,0 +1,7 @@
+Get-AppxPackage |
+where-object {$_.name -notlike "*NET*"} |
+where-object {$_.signatureKind -like "*store*"} |
+where-object {$_.signatureKind -like "*VCLibs*"} |
+Remove-AppxPackage
+
+

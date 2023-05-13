@@ -1,0 +1,1 @@
+Root folder=/, Deploys to /C$/

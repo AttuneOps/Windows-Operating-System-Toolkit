@@ -1,0 +1,2 @@
+Write-Host "Installing Wireshark"
+C:\software\wireshark\Wireshark-win64-3.2.2.exe /S /desktopicon=yes /quicklaunchicon=yes

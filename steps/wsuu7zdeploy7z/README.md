@@ -1,0 +1,1 @@
+Deploy the 7zip installation files to the /software directory on the C drive.

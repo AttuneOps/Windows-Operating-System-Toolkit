@@ -1,0 +1,23 @@
+
+function Convert-IpAddressToMaskLength([string] $dottedIpAddressString)
+{
+  $result = 0; 
+  # ensure we have a valid IP address
+  [IPAddress] $ip = $dottedIpAddressString;
+  $octets = $ip.IPAddressToString.Split('.');
+  foreach($octet in $octets)
+  {
+    while(0 -ne $octet) 
+    {
+      $octet = ($octet -shl 1) -band [byte]::MaxValue
+      $result++; 
+    }
+  }
+  return $result;
+}
+
+$netmask = Convert-IpAddressToMaskLength 255.255.255.0
+
+Write-Output "Netmask: "$netmask
+
+New-NetIPAddress -InterfaceAlias 'Ethernet1' -IPAddress {iccpNic2.ip} -PrefixLength $netmask -Confirm:$false

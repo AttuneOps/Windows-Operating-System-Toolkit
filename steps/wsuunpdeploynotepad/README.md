@@ -1,0 +1,1 @@
+Deploy the Notepad++ setup files to the /software directory on the C drive.

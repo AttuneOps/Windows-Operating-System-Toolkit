@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "72a92e1d-a6c5-4273-a206-ea30dd1caf03", 
+    "key": "iccpnic2", 
+    "name": "ICCP NIC2", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Server"
+}

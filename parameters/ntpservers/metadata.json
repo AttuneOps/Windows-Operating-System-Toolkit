@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "e401129d-3573-4bc0-9acd-2e740a2cf4b0", 
+    "key": "ntpservers", 
+    "name": "NTP Servers", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.ServerList"
+}

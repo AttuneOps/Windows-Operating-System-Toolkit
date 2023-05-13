@@ -1,0 +1,1 @@
+Deploy the specified hosts file to the new Windows server.

@@ -1,0 +1,14 @@
+{
+    "blueprintName": "WIN Reboot", 
+    "blueprintUuid": "6cb93548-d00a-4f13-ba89-46e7cec94b7c", 
+    "cloneUrl": null, 
+    "enabled": true, 
+    "externalUuid4": "e121cac6-5ea3-4b1a-9219-7a5ca4b6e44f", 
+    "key": "winrebootlink", 
+    "name": "WIN Reboot (Link)", 
+    "parameterMap": [], 
+    "projectName": "Windows OS Toolkit", 
+    "projectUuid": "4b38522a-915c-467f-b275-d91010a05dc6", 
+    "projectVersion": "master", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

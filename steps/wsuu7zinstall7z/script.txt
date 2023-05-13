@@ -1,0 +1,3 @@
+Start-Process msiexec.exe "/qn /i C:\software\7z1900-x64.msi" -Wait
+
+# Remove-Item C:\software\7z1900-x64.msi

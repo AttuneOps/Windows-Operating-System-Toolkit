@@ -1,0 +1,9 @@
+Write-Host "Country is currently:"
+Get-WinHomeLocation
+
+Write-Host "Setting the Country"
+Write-Host "Settings -> Time & Language -> Region and Language -> Country or Region"
+Set-WinHomeLocation -GeoID {targetServerWinGeoid}
+
+Write-Host "Country has been changed to:"
+Get-WinHomeLocation

@@ -1,0 +1,12 @@
+{
+    "archiveKey": "winutilputty", 
+    "deployPath": "/c$/software", 
+    "enabled": true, 
+    "externalUuid4": "36391e0b-2833-4ab6-9ed7-b5502956faba", 
+    "key": "wsuupudeployputty", 
+    "name": "WSUU PU Deploy Putty", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

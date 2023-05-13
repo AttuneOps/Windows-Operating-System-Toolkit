@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "b4a1cf02-2abc-4929-95cf-c091e9abd0f4", 
+    "key": "ponwinserverhostsfile", 
+    "name": "PON Win Server Hosts File", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

@@ -1,0 +1,1 @@
+Install PuTTY and create a desktop shortcut for it.

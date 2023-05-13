@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "5e609b50-da80-4095-8ac3-bf9bb0166974", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "winstddisableservermanager", 
+    "name": "WIN STD Disable Server Manager", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 30, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

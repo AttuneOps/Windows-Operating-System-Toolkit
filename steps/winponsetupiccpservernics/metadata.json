@@ -1,0 +1,15 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "304b79d3-cc10-4a3b-a229-d035460faa4c", 
+    "isBlueprint": true, 
+    "key": "winponsetupiccpservernics", 
+    "links": [
+        {
+            "order": 20, 
+            "stepKey": "bpiswsisnconfigurenic2"
+        }
+    ], 
+    "name": "WIN PON Setup ICCP Server NICs", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

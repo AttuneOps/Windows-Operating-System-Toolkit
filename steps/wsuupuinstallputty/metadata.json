@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "3c052631-7925-42c7-808d-70703199b173", 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "wsuupuinstallputty", 
+    "name": "WSUU PU Install Putty", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 90, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}
