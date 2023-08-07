@@ -42,52 +42,8 @@ You can learn more about Attune through
 
 # Clone this Project
 
-Clone this project into your own instance of Attune.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-clone-new-project-01.png" alt="clone a new project"/>
-
----
-
-Paste the GIT repository URL into Attune and Select Clone.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-clone-new-project-02.png" alt="clone a new project"/>
-
----
-
-**Now that this project is in your Attune instance you can begin creating
-Jobs.**
-
-Navigate to the Plan workspace and create a Job from a Blueprint in the
-Project you cloned.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-plan-new-job-11.png" alt="plan a new job"/>
-
----
-
-Configure the Parameters for the Job you created. Create the Values you're
-missing in the next step.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-plan-new-job-12.png" alt="plan a new job"/>
-
----
-
-Create the Values required to fill the Parameters for the Job.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-plan-new-job-13-1.png" alt="plan a new job"/>
-
----
-
-Run your Job.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-run-job-01.png" alt="run your job"/>
-
----
-
-**Congratulations, you’ve run a cloned project.**
-
-If you need further assistance, please explore our help.
-
-<img width=200 src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-get-help-01.png" alt="get help"/>
+To clone this project into your own instance of Attune, follow the
+[Clone a GIT Project How To Instructions](https://servertribe-attune.readthedocs.io/en/latest/howto/design_workspace/clone_project.html).
 
 
 
@@ -104,9 +60,6 @@ This Project contains the following Blueprints.
 ### WIN Disable Sleep and Hibernation
 
 
-### WIN Partition and Format E: Drive
-
-
 ### WIN PON Setup ICCP Server NICs
 
 
@@ -114,6 +67,9 @@ This Project contains the following Blueprints.
 
 
 ### WIN Remove Default Applications
+
+
+### WIN Set Time Server
 
 
 ### WIN Setup Debug Utilities
@@ -129,6 +85,9 @@ Set up a basic set of useful Windows programs.
 ### WSUU Install Brave
 
 
+### WIN Partition and Format E Drive
+
+
 
 
 
@@ -137,21 +96,20 @@ Set up a basic set of useful Windows programs.
 
 | Name | Type | Script Reference | Comment |
 | ---- | ---- | ---------------- | ------- |
-| Active Directory Server | Windows Node | `activedirectoryserver` | None |
-| AD Full Domain Name | Text | `adfulldomainname` | None |
+| Active Directory Server | Windows Node | `activedirectoryserver` |  |
+| AD Full Domain Name | Text | `adfulldomainname` |  |
 | DMS Subnet | Network IPv4 Subnet | `dmssubnet` | Make this the same as Target Subnet. |
-| ICCP NIC2 | Basic Node | `iccpnic2` | None |
-| NTP Servers | Node List | `ntpservers` | None |
+| ICCP NIC2 | Basic Node | `iccpnic2` |  |
+| NTP Servers | Node List | `ntpservers` |  |
 | Target Environment Servers | Node List | `targetenvironmentservers` | The servers in this group are added to the hosts file for this server being built |
-| Target Server: Browser Home Page | Text | `targetserverbrowserhomepage` | None |
-| Target Server: Win | Windows Node | `targetserverwin` | None |
-| Target Server: Windows TimeZone | Text | `targetserverwindowstimezone` | None |
-| Target Server Win: GeoID | Text | `targetserverwingeoid` | The Settings -> Time & Language -> Region & Language -> Country or Region setting.
-https://docs.microsoft.com/en-au/windows/win32/intl/table-of-geographical-locations?redirectedfrom=MSDN |
-| Target Server Win: LANG | Text | `targetserverwinlang` | This is used to set the windows operating systems LANG,
-Settings -> Time & Language -> Region & Language -> Language |
-| Target Server Win: LANG ID | Text | `targetserverwinlangid` | None |
-| Windows: AD Admin User | Windows Credential | `windowsadadminuser` | None |
+| Target Server: Browser Home Page | Text | `targetserverbrowserhomepage` |  |
+| Target Server: Win | Windows Node | `targetserverwin` |  |
+| Target Server: Windows TimeZone | Text | `targetserverwindowstimezone` |  |
+| Target Server Win: GeoID | Text | `targetserverwingeoid` | The Settings -> Time & Language -> Region & Language -> Country or Region setting.<br>https://docs.microsoft.com/en-au/windows/win32/intl/table-of-geographical-locations?redirectedfrom=MSDN |
+| Target Server Win: LANG | Text | `targetserverwinlang` | This is used to set the windows operating systems LANG,<br>Settings -> Time & Language -> Region & Language -> Language |
+| Target Server Win: LANG ID | Text | `targetserverwinlangid` |  |
+| Timezone Server | Basic Node | `timezoneserver` |  |
+| Windows: AD Admin User | Windows Credential | `windowsadadminuser` |  |
 | Windows: Administrator | Windows Credential | `windowsadministrator` | The windows administrator user |
 
 
@@ -159,19 +117,17 @@ Settings -> Time & Language -> Region & Language -> Language |
 
 ## Files
 
-
 | Name | Type | Comment |
 | ---- | ---- | ------- |
 | PON Win Server Hosts File | Version Controlled Files | Root folder=/, Deploys to /C$/ |
-| WIN Util 7z | Version Controlled Files | https://www.7-zip.org/download.html
-(alternative MSI installer) 7-Zip for 64-bit Windows x64 (Intel 64 or AMD64) |
-| WIN Util Brave 64bit | Large Archives | None |
-| WIN Util MobaXTerm | Large Archives | None |
+| WIN Util 7z | Version Controlled Files | https://www.7-zip.org/download.html<br>(alternative MSI installer) 7-Zip for 64-bit Windows x64 (Intel 64 or AMD64) |
+| WIN Util Brave 64bit | Large Archives |  |
+| WIN Util MobaXTerm | Large Archives |  |
 | WIN Util Notepad++ | Version Controlled Files | Utilities such as notepad++, 7zip, etc |
 | WIN Util PowerToys | Version Controlled Files | https://github.com/microsoft/PowerToys/releases |
-| WIN Util Putty | Version Controlled Files | None |
-| WIN Util WinSCP | Version Controlled Files | None |
-| WIN Util WireShark | Large Archives | None |
+| WIN Util Putty | Version Controlled Files |  |
+| WIN Util WinSCP | Version Controlled Files |  |
+| WIN Util WireShark | Large Archives |  |
 
 
 

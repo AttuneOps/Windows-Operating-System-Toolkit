@@ -1,0 +1,15 @@
+{
+    "enabled": true, 
+    "externalUuid4": "1476cf9d-db29-4c57-baef-06d1a3521d3b", 
+    "interpreter": 2, 
+    "interpreterCommand": "", 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "", 
+    "key": "settimeserver", 
+    "name": "Set Time Server", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "targetserverwin", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

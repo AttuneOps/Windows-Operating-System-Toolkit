@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "c061b8ed-715c-4ae5-bf87-8064a10362c9", 
+    "key": "timezoneserver", 
+    "name": "Timezone Server", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Server"
+}

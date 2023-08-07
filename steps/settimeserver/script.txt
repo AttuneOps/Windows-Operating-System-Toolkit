@@ -1,0 +1,16 @@
+$OUTPUT = w32tm /query /status
+Write-Host "OUTPUT=[$OUTPUT]"
+
+$RESULT = Select-String -InputObject $OUTPUT -Pattern "error"
+
+if ($result.length -ne 0) {
+    w32tm /unregister
+    w32tm /register
+    net start w32time
+}
+
+Write-Host "Setting timezone server as {timezoneServer.fqn}"
+
+w32tm /config /syncfromflags:manual `
+    /manualpeerlist:"{timezoneServer.fqn}" `
+    /reliable:yes /update

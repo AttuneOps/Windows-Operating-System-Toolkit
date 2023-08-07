@@ -2,15 +2,15 @@
     "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
-    "externalUuid4": "12351901-8343-41fa-bc5c-941f44d52a90", 
+    "externalUuid4": "df78dfd0-d4f9-48cb-80f1-28078b6beba2", 
     "isBlueprint": true, 
-    "key": "windisablesleepandhibernation", 
+    "key": "winsettimeserver", 
     "links": [
         {
             "order": 0, 
-            "stepKey": "wdshdisablesleepandhibernation"
+            "stepKey": "settimeserver"
         }
     ], 
-    "name": "WIN Disable Sleep and Hibernation", 
+    "name": "WIN Set Time Server", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }
