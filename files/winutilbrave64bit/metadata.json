@@ -1,11 +1,11 @@
 {
     "externalUuid4": "17fb7907-817c-4e8f-bc98-bdc03bd7e6d1", 
-    "fileName": "WIN_Util_Brave_64bit.zip", 
-    "formatKey": "zip", 
+    "fileName": "BraveBrowserStandaloneSetup.exe", 
+    "formatKey": "unknown", 
     "key": "winutilbrave64bit", 
-    "md5": "df0bfb4b05562133fab8b395a43a18cf", 
+    "md5": "b53db070f40f0ea727c973b04b407045", 
     "name": "WIN Util Brave 64bit", 
-    "remoteUri": null, 
-    "size": 70150020, 
+    "remoteUri": "https://github.com/brave/brave-browser/releases/download/v1.61.116/BraveBrowserStandaloneSilentSetup.exe", 
+    "size": 126894160, 
     "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
 }

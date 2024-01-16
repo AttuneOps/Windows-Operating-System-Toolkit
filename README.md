@@ -60,6 +60,9 @@ This Project contains the following Blueprints.
 ### WIN Disable Sleep and Hibernation
 
 
+### WIN Partition and Format E Drive
+
+
 ### WIN PON Setup ICCP Server NICs
 
 
@@ -83,9 +86,6 @@ This Project contains the following Blueprints.
 Set up a basic set of useful Windows programs.
 
 ### WSUU Install Brave
-
-
-### WIN Partition and Format E Drive
 
 
 
@@ -121,7 +121,7 @@ Set up a basic set of useful Windows programs.
 | ---- | ---- | ------- |
 | PON Win Server Hosts File | Version Controlled Files | Root folder=/, Deploys to /C$/ |
 | WIN Util 7z | Version Controlled Files | https://www.7-zip.org/download.html<br>(alternative MSI installer) 7-Zip for 64-bit Windows x64 (Intel 64 or AMD64) |
-| WIN Util Brave 64bit | Large Archives |  |
+| WIN Util Brave 64bit | Large Archives | For the latest release: https://github.com/brave/brave-browser/releases/latest |
 | WIN Util MobaXTerm | Large Archives |  |
 | WIN Util Notepad++ | Version Controlled Files | Utilities such as notepad++, 7zip, etc |
 | WIN Util PowerToys | Version Controlled Files | https://github.com/microsoft/PowerToys/releases |

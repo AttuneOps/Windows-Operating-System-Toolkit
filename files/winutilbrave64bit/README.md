@@ -1,0 +1,1 @@
+For the latest release: https://github.com/brave/brave-browser/releases/latest

@@ -1,11 +1,11 @@
 {
     "externalUuid4": "537a377e-de80-4f9e-acdd-145da9c8339d", 
-    "fileName": "WIN_Util_MobaXTerm.zip", 
+    "fileName": "MobaXterm_Installer_v23.6.zip", 
     "formatKey": "zip", 
     "key": "winutilmobaxterm", 
-    "md5": "a11c21fa5805f83bfa7346f79a2ddf14", 
+    "md5": "6a96ea1b5d596aa0e51e2bdfe42e2221", 
     "name": "WIN Util MobaXTerm", 
-    "remoteUri": null, 
-    "size": 28715190, 
+    "remoteUri": "https://download.mobatek.net/2362023122033030/MobaXterm_Installer_v23.6.zip", 
+    "size": 42128198, 
     "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
 }
