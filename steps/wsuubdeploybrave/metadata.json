@@ -1,4 +1,5 @@
 {
+    "actionOnStepFail": null, 
     "archiveKey": "winutilbrave64bit", 
     "deployPath": "/c$/software", 
     "enabled": true, 
@@ -8,5 +9,5 @@
     "osCredKey": "windowsadministrator", 
     "serverKey": "targetserverwin", 
     "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
-    "unpack": true
+    "unpack": false
 }

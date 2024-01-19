@@ -6,13 +6,13 @@
 
 
 <head>
-    <title>How to WSUU Install Brave - Attune Automation</title>
+    <title>How to Remove Windows Bloatware - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to WSUU Install Brave - Attune Automation">
+          content="How to Remove Windows Bloatware - Attune Automation">
     <meta name="description"
           content="">
     <meta name="robots"
@@ -21,13 +21,13 @@
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo WSUU Install Brave - Attune Automation" />
+          content="HowTo Remove Windows Bloatware - Attune Automation" />
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to WSUU Install Brave - Attune Automation" />
+          content="How to Remove Windows Bloatware - Attune Automation" />
     <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
@@ -119,7 +119,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <strong>WSUU Install Brave</strong>
+                    <strong>Remove Windows Bloatware</strong>
                 </li>
             </ol>
         </nav>
@@ -133,7 +133,7 @@
     <div class="row">
         <div class="col px-0">
             <h1 class="text-left">
-                How to WSUU Install Brave
+                How to Remove Windows Bloatware
             </h1>
         </div>
     </div>
@@ -197,7 +197,7 @@
                     </p>
                     <p class="text-muted">
                         <a href="#top">
-                            <strong>WSUU Install Brave</strong>
+                            <strong>Remove Windows Bloatware</strong>
                         </a>
                     </p>
 
@@ -206,24 +206,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#wsuubdeploybrave">
-                            <strong>Step 1 -</strong> WSUU B Deploy Brave
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#wsuubinstallbrave">
-                            <strong>Step 2 -</strong> WSUU B Install Brave
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#wsuubremoveupdateservice">
-                            <strong>Step 3 -</strong> WSUU B Remove Update Service
+                        <a href="#removelistofapppackages">
+                            <strong>Step 1 -</strong> Remove list of app packages
                         </a>
                     </p>
 
@@ -286,7 +270,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>WSUU Install Brave</strong>
+                You've automated: <strong>Remove Windows Bloatware</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -317,9 +301,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="wsuubdeploybrave">
-                            <a href="#wsuubdeploybrave">
-                                <strong>Step 1 -</strong> WSUU B Deploy Brave
+                        <h3 id="removelistofapppackages">
+                            <a href="#removelistofapppackages">
+                                <strong>Step 1 -</strong> Remove list of app packages
                             </a>
                         </h3>
                     </div>
@@ -327,7 +311,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Deploy the Brave browser setup file to the /software directory on the C drive.</p>
+                                <p>Removes every app with a store signature that doesn't have anything with .NET in the name.</p>
                             </p>
                         </div>
                     </div>
@@ -359,63 +343,6 @@ mstsc /admin /v:{targetserverwin}
                         </div>
 
 
-    
-
-
-
-    <div class="row">
-        <p>
-            <p>For the latest release: https://github.com/brave/brave-browser/releases/latest</p>
-        </p>
-        <p>
-            Copy the File(s)
-            <strong>WIN_Util_Brave_64bit.unknown</strong>
-            to the target node.
-        </p>
-        <p>
-            <strong>Deploy the File(s)</strong> here:
-        </p>
-    </div>
-    <div class="row py-1">
-        <code class="language-bash">
-/c$/software
-        </code>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="wsuubinstallbrave">
-                            <a href="#wsuubinstallbrave">
-                                <strong>Step 2 -</strong> WSUU B Install Brave
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Install the Brave browser and create a Desktop shortcut for it.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
 
     
 
@@ -430,74 +357,49 @@ mstsc /admin /v:{targetserverwin}
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-Set-Location c:\software
+$appPackages = @(
+    &quot;Microsoft.3DBuilder&quot;,
+    &quot;Microsoft.Bing*&quot;
+    &quot;Microsoft.GamingApp&quot;
+    &quot;Microsoft.GetHelp&quot;,
+    &quot;Microsoft.Getstarted&quot;,
+    &quot;Microsoft.Messaging&quot;,
+    &quot;Microsoft.MicrosoftOfficeHub&quot;,
+    &quot;Microsoft.MicrosoftSolitaireCollection&quot;,
+    &quot;Microsoft.Office.OneNote&quot;,
+    &quot;Microsoft.OneConnect&quot;,
+    &quot;Microsoft.OutlookForWindows&quot;
+    &quot;Microsoft.People&quot;,
+    &quot;Microsoft.SkypeApp&quot;,
+    &quot;Microsoft.Wallet&quot;,
+    &quot;Microsoft.WindowsAlarms&quot;,
+    &quot;Microsoft.WindowsCamera&quot;,
+    &quot;Microsoft.WindowsMaps&quot;,
+    &quot;Microsoft.WindowsPhone&quot;,
+    &quot;Microsoft.WindowsSoundRecorder&quot;,
+    &quot;Microsoft.Xbox*&quot;,
+    &quot;Microsoft.YourPhone&quot;,
+    &quot;Microsoft.ZuneMusic&quot;,
+    &quot;Microsoft.ZuneVideo&quot;,
+    &quot;Spotify*&quot;
+)
 
-Start-Process .\BraveBrowserStandaloneSilentSetup.exe -Wait
+foreach ($app in $appPackages) {
+    Write-Host &quot;Removing $app...&quot;
+    Get-AppxPackage -Name $app -AllUsers | `
+        Remove-AppxPackage -ErrorAction SilentlyContinue
+    Get-AppxProvisionedPackage -Online | `
+        where DisplayName -EQ $app | `
+        Remove-AppxProvisionedPackage -Online
+    Write-Host &quot;$app removed.&quot;
+}
 
-$EXE = &quot;C:\Windows\System32\config\systemprofile\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe&quot;
-$DestPath = &quot;C:\Users\Public\Desktop&quot;
+Write-Host &quot;Bloatware removal process completed.&quot;
 
-$DestLink = &quot;$DestPath\Brave.lnk&quot;
-if (Test-Path &quot;$DestLink&quot;) { Remove-Item &quot;$DestLink&quot; }
-
-$WshShell = New-Object -comObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut(&quot;$DestLink&quot;)
-$Shortcut.TargetPath = &quot;$EXE&quot;
-$Shortcut.Save()
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="wsuubremoveupdateservice">
-                            <a href="#wsuubremoveupdateservice">
-                                <strong>Step 3 -</strong> WSUU B Remove Update Service
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>This will remove the Brave software update services.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-Unregister-ScheduledTask -TaskName &quot;Brave*&quot; -Confirm:$false
+Write-Host &quot;The following app packages were not removed:&quot;
+foreach ($app in $appPackages) {
+    Get-AppxPackage -Name $app -AllUsers | Select-Object -Property Name
+}
                 </code>
             </pre>
         </div>

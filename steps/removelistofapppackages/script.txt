@@ -1,0 +1,43 @@
+$appPackages = @(
+    "Microsoft.3DBuilder",
+    "Microsoft.Bing*"
+    "Microsoft.GamingApp"
+    "Microsoft.GetHelp",
+    "Microsoft.Getstarted",
+    "Microsoft.Messaging",
+    "Microsoft.MicrosoftOfficeHub",
+    "Microsoft.MicrosoftSolitaireCollection",
+    "Microsoft.Office.OneNote",
+    "Microsoft.OneConnect",
+    "Microsoft.OutlookForWindows"
+    "Microsoft.People",
+    "Microsoft.SkypeApp",
+    "Microsoft.Wallet",
+    "Microsoft.WindowsAlarms",
+    "Microsoft.WindowsCamera",
+    "Microsoft.WindowsMaps",
+    "Microsoft.WindowsPhone",
+    "Microsoft.WindowsSoundRecorder",
+    "Microsoft.Xbox*",
+    "Microsoft.YourPhone",
+    "Microsoft.ZuneMusic",
+    "Microsoft.ZuneVideo",
+    "Spotify*"
+)
+
+foreach ($app in $appPackages) {
+    Write-Host "Removing $app..."
+    Get-AppxPackage -Name $app -AllUsers | `
+        Remove-AppxPackage -ErrorAction SilentlyContinue
+    Get-AppxProvisionedPackage -Online | `
+        where DisplayName -EQ $app | `
+        Remove-AppxProvisionedPackage -Online
+    Write-Host "$app removed."
+}
+
+Write-Host "Bloatware removal process completed."
+
+Write-Host "The following app packages were not removed:"
+foreach ($app in $appPackages) {
+    Get-AppxPackage -Name $app -AllUsers | Select-Object -Property Name
+}

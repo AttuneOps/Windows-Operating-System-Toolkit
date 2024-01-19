@@ -4,13 +4,13 @@
     "enabled": true, 
     "externalUuid4": "48942a9f-ccfc-4c14-b36d-b9bc200774c1", 
     "isBlueprint": true, 
-    "key": "winremovedefaultapplications", 
+    "key": "removewindowsbloatware", 
     "links": [
         {
             "order": 40, 
-            "stepKey": "winuninstalldefaultapplications"
+            "stepKey": "removelistofapppackages"
         }
     ], 
-    "name": "WIN Remove Default Applications", 
+    "name": "Remove Windows Bloatware", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

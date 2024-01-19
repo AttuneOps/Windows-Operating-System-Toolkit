@@ -69,9 +69,6 @@ This Project contains the following Blueprints.
 ### WIN Reboot
 
 
-### WIN Remove Default Applications
-
-
 ### WIN Set Time Server
 
 
@@ -86,6 +83,9 @@ This Project contains the following Blueprints.
 Set up a basic set of useful Windows programs.
 
 ### WSUU Install Brave
+
+
+### Remove Windows Bloatware
 
 
 

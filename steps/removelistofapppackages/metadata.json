@@ -1,15 +1,16 @@
 {
+    "actionOnStepFail": null, 
     "enabled": true, 
     "externalUuid4": "1e6498b4-7b72-4604-91b4-51f57dbae601", 
     "interpreter": 2, 
     "interpreterCommand": null, 
     "interpreterScriptExt": null, 
     "interpreterScriptSyntax": "powershell", 
-    "key": "winuninstalldefaultapplications", 
-    "name": "WIN Uninstall Default Applications", 
+    "key": "removelistofapppackages", 
+    "name": "Remove list of app packages", 
     "osCredKey": "windowsadministrator", 
     "serverKey": "targetserverwin", 
     "successExitCode": 0, 
-    "timeout": 30, 
+    "timeout": 120, 
     "type": "com.servertribe.attune.tuples.StepWinRmTuple"
 }
