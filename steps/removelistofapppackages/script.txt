@@ -27,10 +27,10 @@ $appPackages = @(
 
 foreach ($app in $appPackages) {
     Write-Host "Removing $app..."
-    Get-AppxPackage -Name $app -AllUsers | `
-        Remove-AppxPackage -ErrorAction SilentlyContinue
-    Get-AppxProvisionedPackage -Online | `
-        where DisplayName -EQ $app | `
+    Get-AppxPackage -Name $app -AllUsers |
+        Remove-AppxPackage -AllUsers -ErrorAction SilentlyContinue
+    Get-AppxProvisionedPackage -Online |
+        where DisplayName -EQ $app |
         Remove-AppxProvisionedPackage -Online
     Write-Host "$app removed."
 }

@@ -54,6 +54,9 @@ This Project contains the following Blueprints.
 
 
 
+### Remove Windows Bloatware
+
+
 ### WIN Connect to Active Directory
 
 
@@ -83,9 +86,6 @@ This Project contains the following Blueprints.
 Set up a basic set of useful Windows programs.
 
 ### WSUU Install Brave
-
-
-### Remove Windows Bloatware
 
 
 
